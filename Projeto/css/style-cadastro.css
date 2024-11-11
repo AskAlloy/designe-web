@@ -201,6 +201,7 @@
     }
     .container2 {
         width: 50%;
+        height:max-content;
     }
    
     .form {
