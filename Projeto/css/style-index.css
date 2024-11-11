@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+.nav-item :hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.image-logo{
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 1px; 
+  }
+
+
+main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter',sans-serif;
+    background-color: #6c63ff;
+    background-image: url(../img/pagina\ de\ noticias/abstract-rainbow-6296890_1920.jpg);
+    background-size: cover;
+    margin-bottom: -49px;
+
+    
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+.card p{
+    text-align: justify;
+}
+
+h2{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+ 
+
+
+ 

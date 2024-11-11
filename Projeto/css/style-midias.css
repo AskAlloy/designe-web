@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+.nav-item :hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.nav-item{
+  font-weight: bold;
+}
+
+.image-logo{
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    
+  }
+
+  main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#0c0ce94d;
+    background-image: url(../img/Cards\ e\ Audios/block-2020949_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.container2{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px #000000;
+    
+   
+}
+.card{
+  box-shadow: 0 0 15px black;
+  background-color: #6c63ff;
+}
+
+  .card-text{
+    text-align: justify;
+  }
+
+  .card-title{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .card-img-top{
+    height: 240px;
+    object-fit: cover;
+
+  }
+
+  .button-card {
+    border: none;
+    background-color: #190061;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.button-card:hover{
+  transform: scale(1.1);
+  opacity: 1.2;
+  background-color: #240090;
+  font-weight: bold;
+
+}
+
+
+  .modal-title{
+    color: black;
+    
+  }
+
+  .page-subtitle{
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    
+  }
+  .page-subtitle p::after{
+    content: '';
+    display: block;
+    width: 7rem;
+    height: .3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .video-controlado{
+    display: flex;
+    height: 250px;
+    width: 500px;
+    margin-left: 10px;
+  }
+
+  .text-card p{
+    margin-bottom: 5px;
+  }
+
+  

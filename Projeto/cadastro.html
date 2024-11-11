@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:#0000005e;">
+        <a class="navbar-brand" href="#"><img class="image-logo" src="img/icone/discord.png" alt=""><b>PROJECTO</b></a>
+        <!-- LOGOOOO DA PAGINA -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="galeria.html">Galeria 
+                <span class="sr-only">(página atual)</span></a> 
+            </li>
+
+            <li class="nav-item active" >
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item active" >
+              <a class="nav-link" href="cadastro.html">Cadastro</a>
+
+            </li>
+            
+            <li class="nav-item active" >
+                <a class="nav-link" href="midias.html">Midias</a>
+            </li>
+
+            <li class="nav-item active" >
+              <a class="nav-link" href="Carroussel.html">Carossel</a>
+          </li>
+
+          </ul>
+          
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-info my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+
+        </div>
+      </nav>
+
+  </header>
+
+    <main class="b-cadastro">
+        <div class="container2">
+            <div class="form-image">
+            <img src="img/svg/undraw_futuristic_interface_re_0cm6.svg" alt="Imagem de cadastro">
+            </div>
+         
+
+        <!-- TENTA COLOCAR O CARD AQUI -->
+        <div class="card" style="width: 50%;">
+
+          <video class="video-card" controls autoplay loop>
+            <source src="videos/Unifique - Vídeo Institucional Animado.mp4" type="video/mp4">
+          </video>
+
+            <div class="card-body">
+              <h5 class="card-title">Venha Fazer Parte do Nosso Time </h5>
+              <p class="card-text" style="text-align: justify;">A Unifique operadora de banda larga de Santa Catarina contou com um vídeo institucional animado para fazer uma versão animada de um jingle, com o objetivo do mesmo ser exibido em eventos parceiros,  em Santa Catarina, que reuniu 576 mil pessoas na sua edição 2019.</p>
+
+              <!-- Botão para acionar MODAAAAAAAAAAAAL -->
+              
+            
+                 <!-- Modal grande -->
+                 <button type="button" class="modal-button" data-toggle="modal" data-target=".bd-example-modal-lg">CADASTRE-SE</button>
+
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                <div class="modal-header"> 
+                    <h5 class="modal-title" id="TituloModalCentralizado">Formulário de Cadastro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+          
+                      <!-- CORPO DO MODAL QUE PODERIA NÃO TER MODAL  -->
+                       <div class="form">
+                      <form action="#" method="post">
+
+                          <div class="form-header">
+                              <div class="form-titulo">
+                                  <h1>Cadastre-se</h1>
+                              </div>
+                              <div class="button-login">
+                                  <button><a href="#"> Entre </a></button>
+                              </div>
+                          </div>
+                          
+              
+                          <div class="inputs">
+                              <div class="input-box">
+                                  <label for="name"> Nome:</label>
+                                  <input type="text" id="name" name="name" placeholder="Digite seu Nome" required>
+                              </div>
+              
+                              <div class="input-box">
+                                  <label for="lastname"> Sobrenome:</label>
+                                  <input type="text" id="lastname" name="lastname" placeholder="Digite seu Sobrenome" required>
+                              </div>
+
+                              <div class="input-box">
+                                <label for="nickname"> Nome de usuário:</label>
+                                <input type="text" id="nickname" name="nickname" placeholder="Digite seu nome de Usuário" required>
+                            </div>
+                          
+                              <div class="input-box">
+                                  <label for="email "> E-mail:</label>
+                                  <input type="email" id="email" name="email" placeholder="Digite seu melhor email" required>
+                              </div>
+              
+                              <div class="input-box">
+                                  <label for="number "> Celular:</label>
+                                  <input type="tel" id="number" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                              </div>
+          
+                              <div class="input-box">
+                                  <label for="password"> Senha:</label>
+                                  <input type="password" id="password" name="password" placeholder="Digite sua Senha" required>
+                              </div>
+          
+                              <div class="input-box">
+                                  <label for="password"> Confirme a Senha:</label>
+                                  <input type="password" id="password" name="Confirmpassword" placeholder="Digite sua Senha" required>
+                              </div>
+                      </div>
+
+                      <div class="continue-button">
+                        <button type="submit"><a href="#">Continuar</a></button>
+                      </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+              </form>
+
+            </div>
+          </div> 
+          <!--ISSO AQUI É PRA SER FINAL DO CARD -->
+        </div>
+</div>  <!--esse aqui fica o container> -->
+    </main>
+
+   <!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <p class="mb-1">&copy; 2024 OUT OF ORDER. Todos os direitos reservados.</p>
+    <p class="mb-0">Entre em contato pelo e-mail: <a href="mailto:contato@outoforder.com" class="text-white">contato@outoforder.com</a></p>
+  </div>
+</footer>
+
+    <!-- COISAS BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

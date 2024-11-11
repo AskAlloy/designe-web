@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo-GALERIA.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Galeria de Fotos</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#19181A;">
+        <a class="navbar-brand" href="#"><img class="image-logo" src="img/icone/discord.png" alt=""> <b>PROJECTO</b></a>
+        <!-- LOGOOOO DA PAGINA -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" id="navitem">
+              <a class="nav-link" href="galeria.html">Galeria 
+                <span class="sr-only">(página atual)</span></a> 
+            </li>
+
+            <li class="nav-item active" >
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item active" >
+              <a class="nav-link" href="cadastro.html">Cadastro</a>
+
+            </li>
+            
+            <li class="nav-item active" >
+                <a class="nav-link" href="midias.html">Midias</a>
+            </li>
+
+            <li class="nav-item active" >
+              <a class="nav-link" href="Carroussel.html">Carossel</a>
+          </li>
+
+          </ul>
+
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+          
+        </div>
+      </nav>
+
+  </header>
+
+    <main>
+        <div class="container">
+
+            <h1 class="titulo">Galeria de Fimes</h1> 
+
+            <!-- Botão para acionar modal -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalExemplo">
+            <b>Adicionar Filmes</b>
+          </button>
+          
+      <!-- Modal -->
+      <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" >Adicione seu Filme</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Parte do codigo antigo e codigo novo -->
+               <div class="page-subtitle">
+                <p>
+                  Qual seu filme favorito?
+                </p>
+               </div>
+              
+                    <div class="form-wrapper">
+              
+                    <label for='poster' class= 'Poster'>Poster:</label>
+                    <input type="text" id="Poster" name="filme" placeholder="Insira endereço de imagem">
+              
+                    <label>Trailer:</label>
+                    <input type="text" id="trailer" name="trailerURL" placeholder="Insira url do trailer">
+                    
+                    <label>Nome:</label>
+                    <input type="text" id="Nome" name="nomeURL" placeholder="Insira o nome do seu Filme">
+                    
+                    <button onClick="adicionarFilme()" >Adicionar Filme</button>
+                  </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                
+
+              
+    </div>
+             <!--AQUI VÃO FICAS AS IMAGENS JA NO SITE  -->
+             <!-- mudei isso aqui para galeria-container para os novos filmes ficarem na mesma div dos antigos-->
+              <!-- <div id="listaFilmes"></div> -->
+
+     <div class="galeria-container" id="galeriafilmes">
+        <a href="img/Galeria/Kill Bill.jpg" class="galeria-filmes">
+          <img src="img/Galeria/Kill Bill.jpg" alt="Kill Bill">
+            <p class="titulo-filmes">Kill Bill</p>
+                </a>
+                
+                <a href="img/Galeria/Bastardos Inglorious.jpg" class="galeria-filmes">
+                    <img src="img/Galeria/Bastardos Inglorious.jpg" alt="Bastardos Inglorious.jpg">
+                    <p class="titulo-filmes">Bastardos Inglorious</p>
+                </a>
+                
+                <a href="img/Galeria/brilho eterno de uma mente sem lembranças.jpg" class="galeria-filmes">
+                    <img src="img/Galeria/brilho eterno de uma mente sem lembranças.jpg" alt="brilho eterno de uma mente sem lembranças.jpg">
+                    <p class="titulo-filmes">Brilho Eterno de uma Mente sem Lembranças </p>   
+                </a>
+
+                <a href="img/Galeria/La-la-land.jpg" class="galeria-filmes">
+                    <img src="img/Galeria/La-la-land.jpg" alt="La-la-land.jpg">
+                    <p class="titulo-filmes">La La Land</p>
+                </a>
+
+                <a href="img/Galeria/O grande Hoterl budapeste.jpg" class="galeria-filmes">
+                    <img src="img/Galeria/O grande Hoterl budapeste.jpg" alt="O grande Hotel budapeste.jpg">
+                    <p class="titulo-filmes">O Grande Hotel budapeste</p>
+                </a>
+
+                <a href="img/Galeria/Oz magico e Poderoso.jpg" class="galeria-filmes">
+                    <img src="img/Galeria/Oz magico e Poderoso.jpg" alt="Oz magico e Poderoso.jpg">
+                    <p class="titulo-filmes">Oz magico e Poderoso</p>
+                </a>
+
+                <a href="img/Galeria/Viagem de Chiriro.jpg" class="galeria-filmes">
+                    <img src="img/Galeria/Viagem de Chiriro.jpg" alt="A viagem de Chihiro">
+                    <p class="titulo-filmes">A viagem de Chihiro</p>
+                </a>
+
+                <a href="img/Galeria/V de Vingança.jpg" class="galeria-filmes">
+                    <img src="img/Galeria/V de Vingança.jpg" alt="V de Vingança">
+                    <p class="titulo-filmes">V de Vingança</p>
+                </a>
+
+                <a href="img/Galeria/o primeiro mentiroso.jpg" class="galeria-filmes">
+                    <img src="img/Galeria/o primeiro mentiroso.jpg" alt="O primeiro Mentiroso">
+                    <p class="titulo-filmes">O primeiro Mentiroso</p>
+                </a>
+
+      </div>
+         
+          <div id="listaFilmesFixos"></div>
+      
+
+    </main>
+
+<!-- Footer -->
+<footer class="text-white text-center py-2" style="background-color: black;">
+  <div class="container">
+    <p class="mb-1">&copy; 2024 OUT OF ORDER. Todos os direitos reservados.</p>
+    <p class="mb-0">Entre em contato pelo e-mail: <a href="mailto:contato@outoforder.com" class="text-white">contato@outoforder.com</a></p>
+  </div>
+</footer>
+    <!-- Coisas para Javascript meu e bootsptrap -->
+    <script src="script/script.js"></script>
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-midias.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Card</title>
+</head>
+<body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#00000063;"> <!--#0c0ce94d-->
+            <a class="navbar-brand" href="#"><img class="image-logo" src="img/icone/discord.png" alt=""> <b>PROJECTO</b></a>
+            <!-- LOGOOOO DA PAGINA -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" id="navitem">
+                  <a class="nav-link" href="galeria.html">Galeria 
+                    <span class="sr-only">(página atual)</span></a> 
+                </li>
+    
+                <li class="nav-item active" >
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+    
+                <li class="nav-item active" >
+                  <a class="nav-link" href="cadastro.html">Cadastro</a>
+    
+                </li>
+                
+                <li class="nav-item active" >
+                    <a class="nav-link" href="midias.html">Midias</a>
+                </li>
+    
+                <li class="nav-item active" >
+                  <a class="nav-link" href="Carroussel.html">Carossel</a>
+              </li>
+
+              </ul>
+              
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Pesquisar</button>
+              </form>
+            </div>
+          </nav>
+      </header>
+
+    
+    <main>
+      <br>
+  <div class="container">   
+      
+      <!--AQUI VAI DAR CERTO  -->
+
+      <div class="card-deck">
+        <div class="card text-white bg-info mb-3" >
+          <img class="card-img-top" src="img/Cards e Audios/Ainda estou aqui capa.png" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title" >Ainda estou aqui</h5>
+              <p class="card-text">No início da década de 1970, o Brasil enfrenta o endurecimento da ditadura militar. No Rio de Janeiro, a família Paiva - Rubens, Eunice e seus cinco filhos - vive à beira da praia em uma casa de portas abertas para os amigos. Um dia, Rubens Paiva é levado por militares à paisana e desaparece.</p>
+          </div>
+          <div class="card-footer">
+
+            <!-- Botão para acionar modal -->
+            <button type="button" class="button-card" data-toggle="modal" data-target="#ExemploModalCentralizado">
+              Abrir Demonstração
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="TituloModalCentralizado">Ainda estou aqui</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <div class="page-subtitle">
+                      <p>Ainda estou aqui</p>
+                    </div>
+
+                    <div class="video-controlado">
+
+                      <video controls>
+                        <source src="videos/Ainda Estou Aqui .mp4" type="video/mp4">
+                      </video>
+
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div><!--acaba o card-->
+        <div class="card text-white bg-info mb-3">
+          <img class="card-img-top" src="img/Cards e Audios/Eu a patroa  e as crianças.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Eu a Patroa e as Crianças</h5>
+              <p class="card-text">Michael Kyle é um pai de família que tem um estilo bastante peculiar. Ele dá
+                lições de vida para seus filhos com um toque de humor nada convencional.. Os três filhos
+                deles são: Michael Jr. que sempre recebe conselhos de seu pai, a adolescente
+                Claire, cujo hobby é pedir dinheiro para Michael e Kady, que raramente deixa o
+                patriarca dar a última palavra.</p>
+          </div>
+          <div class="card-footer">
+
+            <!-- Botão para acionar modal -->
+            <button type="button" class="button-card" data-toggle="modal" data-target="#modalExemplo">
+              Abrir Demonstração
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">EU a Patroa e as Crianças</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="page-subtitle">
+                      <p>Abertura da Serie</p>
+                    </div>
+                    <div class="audio-serie">
+                      <audio controls>
+                        <source src="img/Cards e Audios/AUDIO - Abertura de  Eu, a Patroa e as Crianças  na Record (25_08_2024).mp3" type="audio/mpeg">
+                      </audio>
+
+                    </div>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> <!--acaba o card-->
+
+
+        <div class="card text-white bg-info mb-3">
+          <img class="card-img-top" src="img/Cards e Audios/todomundo odeia o chris.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Todo Mundo Odeia o Chris</h5>
+            <p class="card-text">Acompanhe o dia a dia de Chris, um adolescente crescendo no Brooklyn dos anos 1980, ao lado de sua excêntrica família, composta pelo pai, Julius, sua mãe, Rochelle, sua irmã mimada, Tonya, e seu irmão Drew, que é bastante popular.</p>
+          </div>
+          <div class="card-footer">
+            
+            <!-- Botão para acionar modal -->
+            <button type="button" class="button-card" data-toggle="modal" data-target="#modalTodoMundoOdeiaChris">
+              Abrir Demonstração
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalTodoMundoOdeiaChris" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Todo Mundo Odeia o Chris</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+
+                    <div class="page-subtitle">
+                      <p>Todo Mundo Odeia o Chris</p>
+                    </div>
+
+                    <div class="video-controlado">
+
+                      <video controls loop>
+                      <source src="videos/Todo Mundo Odeia o Chris - Abertura 1° Temporada [HD] 720p.mp4" type="video/mp4" >
+                      </video>
+
+                    </div>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                   
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div> <!--acaba o card-->
+      </div>
+
+      <!-- AQUI ACABA O DECK -->
+            
+  </div>
+      </main>
+      
+
+    </div>
+    </main>
+
+ <!-- Footer -->
+ <footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <p class="mb-1">&copy; 2024 OUT OF ORDER. Todos os direitos reservados.</p>
+    <p class="mb-0">Entre em contato pelo e-mail: <a href="mailto:contato@outoforder.com" class="text-white">contato@outoforder.com</a></p>
+  </div>
+</footer>
+
+     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+</body>
+</html>

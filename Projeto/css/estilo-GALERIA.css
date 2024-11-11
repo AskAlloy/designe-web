@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+.nav-item :hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+body {
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2014/11/30/17/15/theater-551797_960_720.jpg) ;
+    
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+
+/* PARA A GALERIA DE FILMES */
+  .image-logo{
+    width: 50px;
+    position: relative;
+    
+  }
+
+  .titulo{
+    text-align: center;
+    font-style: italic;
+    color: #fde3a7d7;
+    font-weight: 700;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  label {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    width: 20px;
+    margin-right: 30px;
+    align-items: center;
+    
+  }
+
+  .form-wrapper {
+    margin: 0 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    
+  }
+  
+  .form-wrapper input {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: solid;
+    border-color: #9e9c9c;
+  }
+  
+  .form-wrapper button {
+    border: 0;
+    color: #ffffff;
+    background: #af0066;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form-wrapper button:hover {
+    opacity: .5;
+  }
+
+  .page-subtitle{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: 	black;
+
+  }
+
+  .modal-header{
+    background-color: #ffffff;
+  }
+
+  .modal-body{
+    background-color: #dbdbdb;
+
+  }
+  .modal-footer{
+    background-color: #fff;
+  }
+
+  .galeria-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .galeria-filmes{ /*Nome dos Links poderia ser mais criativo*/
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .galeria-filmes img{
+    width: 100%;
+    height: 325px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .galeria-filmes img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .5s;
+    
+  }
+
+ .galeria-filmes .titulo-filmes {
+    color: inherit; /*isso tira a cor azul do Link*/
+    text-decoration: none;/*Tentando tirar a linha do Link*/
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/*Tentando tirar a linha do Link*/
+.galeria-filmes .titulo-filmes:hover{
+    text-decoration: none;
+}
+
+  /* Contêiner onde fica os pôsteres */
+  .filme-container {
+    display: inline-block;
+    width: 250px; 
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Estilo para a imagem do pôster */
+.filme-container img {
+    width: 100%;
+    height: 325px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o nome do filme */
+.filme-container .nome-filme {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+  #galeriafilmes img {
+    margin: 10px;
+    height: 300px;
+    width: 200;
+  }
+  
+  #galeriafilmes img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+ 
+  
+
